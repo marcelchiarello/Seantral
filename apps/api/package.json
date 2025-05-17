@@ -1,0 +1,27 @@
+{
+  "name": "@seantral/api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "uvicorn main:app --host 0.0.0.0 --port 3001",
+    "dev": "uvicorn main:app --reload --host 0.0.0.0 --port 3001",
+    "lint": "eslint .",
+    "test": "pytest --cov=app tests/"
+  },
+  "dependencies": {
+    "fastapi": "^0.100.0",
+    "uvicorn": "^0.23.0",
+    "pydantic": "^2.0.0",
+    "python-dotenv": "^1.0.0",
+    "duckdb": "^0.9.0",
+    "pandas": "^2.0.0",
+    "pyarrow": "^14.0.0"
+  },
+  "devDependencies": {
+    "pytest": "^7.0.0",
+    "pytest-cov": "^4.1.0",
+    "black": "^23.3.0",
+    "ruff": "^0.0.1"
+  }
+} 

@@ -1,0 +1,1 @@
+"""Copernicus Marine Environment Monitoring Service data ingestion module.""" 
